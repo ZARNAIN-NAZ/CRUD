@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <h2>CRUD operation with firebase</h2>
 <hr>
+<div id="form">
+Roll No:&nbsp; &nbsp;<input type="text" name="rollNo." id="rollNo"> <br> <br>
+Name:&nbsp; &nbsp;<input type="text" name="name" id="name"> <br> <br>
+Address:&nbsp; &nbsp;<input type="text" name="address" id="address"> <br> <br>
 
+</div>
+<div id="buttons">
+    <button id="create">Create</button>
+    <button id="read">Read</button>
+    <button id="update">Update</button>
+    <button id="delete">Delete</button>
+</div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
     <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
