@@ -24,17 +24,17 @@ document.getElementById("create").onclick = function () {
 };
 
 //read
-// document.getElementById("read").onclick = function () {
-//   readForm();
-//   firebase
-//     .database()
-//     .ref("student/" + rollV)
-//     .on("value", function (snap) {
-//       document.getElementById("rollNo").value = snap.val().rollNo;
-//       document.getElementById("name").value = snap.val().name;
-//       document.getElementById("address").value = snap.val().address;
-//     });
-// };
+document.getElementById("read").onclick = function () {
+  readForm();
+  firebase
+    .database()
+    .ref("user/" + rollV)
+    .on("value", function (snap) {
+      document.getElementById("rollNo").value = snap.val().rollNo;
+      document.getElementById("name").value = snap.val().name;
+      document.getElementById("address").value = snap.val().address;
+    });
+};
 
 //update
 document.getElementById("update").onclick = function () {
